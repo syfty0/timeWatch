@@ -24,7 +24,7 @@ function drawTimer() {
 }
 
 function randDelay() {
-  return Math.floor(Math.random() * 50)+1;
+  return Math.floor(Math.random() * 40)+1;
 }
 
 function applyGlitch() {
@@ -82,7 +82,7 @@ function tick() {
       applyGlitch();
       drawTimer();
       mode = "response";
-      responseWindow = 1;      
+      responseWindow = 3;      
       pressed = false;
     }
   } else if (mode === "response") {
